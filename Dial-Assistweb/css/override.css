@@ -4,3 +4,9 @@
         line-height: 0px!important;
     }
 }
+@media (max-width: 414px){
+    .agileinfo_footer_bottom1 {
+        bottom: 0;
+        width: 100%;
+    }
+}
