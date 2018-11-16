@@ -1,0 +1,6 @@
+@media (max-width: 480px){
+    .agileinfo_footer_bottom1 p {
+        font-size: 6px!important;
+        line-height: 0px!important;
+    }
+}
