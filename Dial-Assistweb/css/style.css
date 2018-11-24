@@ -70,7 +70,7 @@ p,ul li,ol li{
 /*-- //main --*/ 
 /*-- header --*/ 
 .header-w3ls{
-	background: #4286f4;
+	background: #3aa4d8;
 	padding:10px 20px;
 }
 button#trigger-overlay {
@@ -407,7 +407,7 @@ button#trigger-overlay i {
 .bottons-agileits-w3layouts a:hover {
 	text-decoration: none;
     background: rgb(255, 255, 255);
-    color: #3f51b5;
+    color: #f68e4f;
     /* border-radius: 50px; */
     /* -webkit-border-radius: 50px; */
     -o-border-radius: 50px;
@@ -445,7 +445,7 @@ button#trigger-overlay i {
     margin: 0;
     width: 100%;
     border: none;
-    border-bottom: 2px solid #3f51b5;
+    border-bottom: 2px solid #3aa4d8;
     -webkit-appearance: none;
     margin-bottom: 1em;
     background: transparent;
@@ -485,7 +485,7 @@ button#trigger-overlay i {
     position: relative;
 }
 input.checkbox {
-    background: #fe4630;
+    background: #f68e4f;
     cursor: pointer;
     width: 1.2em;
     height: 1.2em;
@@ -583,7 +583,7 @@ input.checkbox:checked:after {
     -webkit-appearance: none;
 	text-transform: uppercase;
     transition: .5s all;
-    background: #3f51b5;
+    background: #f68e4f;
     display: inline-block;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -592,7 +592,7 @@ input.checkbox:checked:after {
 	-ms-transition: 0.5s all;
 }
 .agileits-login input[type="submit"]:hover {
-    background:#fe4630;
+    background:#3aa4d8;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
 	-moz-transition: 0.5s all;
@@ -611,7 +611,7 @@ input.checkbox:checked:after {
     text-align: center;
     padding: 3em 0em;
     list-style: none;
-    background: #000;
+    background: #3aa4d8;
     display: inline-block;
 	margin-bottom:10px;
     width: 49.5%;
@@ -634,7 +634,7 @@ a.opt-grids {
     text-decoration: none;
 }
 .options-wthree ul li:hover {
-	background: #4286f4;
+	background: #f68e4f;
 	transition:.5s ease-in;
 	-webkit-transition:.5s ease-in;
 	-moz-transition:.5s ease-in;
@@ -658,7 +658,7 @@ a.opt-grids {
 	-ms-transition:.5s ease-in;
 }
 .icon-agileits-w3layouts i {
-    color: #fe4630;
+    color: white;
     font-size: 35px;
 	transition:.5s ease-in;
 	-webkit-transition:.5s ease-in;
@@ -772,13 +772,13 @@ p.para-wthree {
 	text-decoration: none;
 }
 .panel-default {
-    border-color: #3f51b5;
-    background: #3f51b5;
+    border-color: #f68e4f;
+    background: #212121;
 }
 .panel-default > .panel-heading {
     border-color: #FFF;
 	color:#212121;
-       background-color: #3f51b5;
+       background-color: #f68e4f;
 }
 .panel-body {
     padding: 2em;
@@ -841,11 +841,11 @@ a.pa_italic:focus {
     font-weight: 600;
     display: inline-block;
     padding: 10px;
-    background: #3f51b5;
+    background: #3aa4d8;
 }
 .w3layouts_stats_left i {
     font-size: 2.5em;
-    color: #fe4630;
+    color: #f68e4f;
 }
 .w3l_stats_bottom_grid_left img{
 	margin:0 auto;
@@ -2118,7 +2118,7 @@ ul.tag2:last-child {
 }
 .agileinfo_footer_bottom1 {
     padding: 2em 0;
-    background: #0f0f10;
+    background: #2b2c32;
 }
 .index-copy-right{
 	background: transparent;
@@ -2500,6 +2500,9 @@ h2.typoh2{
 @media(max-width:991px){
 	.bnr-btm-info {
 		padding-left: 10px;
+	}
+	#innerfooter1{
+		position: inherit!important;
 	}
 	.agileits-banner-info h3 {
 		font-size: 2.5em;
