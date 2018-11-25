@@ -12,7 +12,7 @@
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link rel="stylesheet" type="text/css" href="css/style11.css" /><!-- menu style sheet -->
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
-<link href="css/override.css" type="text/css" rel="stylesheet" media="all"> 
+<link href='css/override.css'/>
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
@@ -22,29 +22,15 @@
 
 <!-- //web-fonts -->
 </head>
-<body class="bg">
-	<div class="overlay overlay-simplegenie">
-			<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-			<nav>
-				<ul>
-					<li><a href="main.html">Home</a></li>
-					<li><a href="journal.html">Journal</a></li>
-					<li><a href="treatment.html">Treatment</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="renalinfo.html">Renal Info</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
-		<section class="header-w3ls"> 
-				<button id="trigger-overlay" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-				<div class="bottons-agileits-w3layouts">
-				<a class="page-scroll" href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Log Out</a>.
-				</div>
-			<h1 id="headertitle1"><a href="main.html">Dial-Assist</a></h1>
-			<div class="clearfix"> </div>
-		</section>
+<body class="bg" id="loginpagebg">
 <!-- //menu -->
+<div class='container'>
+    <div class="row">
+        <div class='col-md-12'>
+            <img src="./images/loginscreenlogo.png" alt="" width="100%"/>
+        </div>
+    </div>
+</div>
 <!-- modal -->
 	<div class="modal about-modal w3-agileits fade" id="myModal2" tabindex="-1" role="dialog">
 		<div class="modal-dialog" role="document">
@@ -121,69 +107,35 @@
 			</div>
 		</div>
 	<!-- //modal --> 
+
 <!-- banner -->
-<div class="inner-banner-agileits-w3layouts">
-</div>
-<!-- //banner -->
-<!-- breadcrumbs -->
-<div class="w3l_agileits_breadcrumbs">
-   <div class="container">
-		<div class="w3l_agileits_breadcrumbs_inner">
-			<ul>
-				<li><a href="main.html">Home</a><span>«</span></li>
-									
-				<li>Appointment</li>
-				</ul>
-		</div>
-	</div>
-</div>		
-<!-- //breadcrumbs -->
-<!-- Appointment -->
-<div class="appointment">
-   <div class="container">
-	<div class="form-agileits">
-	<h3>Make an appointment</h3>
-	<p>Providing Total Health Care Solution</p>
-	<form action="#" method="post">
-		<input  class="name" type="text" name="Patient Name" placeholder="Patient Name" required=""/>
-		<input type="text" name="Number" placeholder="Number" required=""/>
-		<input class="name" type="email" name="Email" placeholder="Email" required=""/>
-		<input  id="datepicker1" name="Text" type="text" value="" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'mm/dd/yyyy';}" placeholder="mm/dd/yyyy" required="">
-		<select class="form-control name" placeholder="department">
-			<option>Department</option>
-			<option>Cardiology</option>
-			<option>Ophthalmology</option>
-			<option>Neurology</option>
-			<option>Psychology</option>
-			<option>Dermatology</option>
-		</select>
-		<select class="form-control">
-			<option>Gender</option>
-			<option>Male</option>
-			<option>Female</option>
-		</select>
-		 <input type="submit" value="Make an appointment">
-	</form>
-	</div>
-	<div class="timings-w3ls">
-							<h5>Appointment Days</h5>
-							<ul>
-								<li>Pediatric <span>Sun-Tue</span></li>
-								<li>Gynaecology<span>Wed-Fri</span></li>
-								<li>Cardiac<span>Sat-Mon</span></li>
-							</ul>
-	</div>
-	<div class="w3ls-location">
-		<a href="locations.html">Locations</a>
-	</div>
-	</div>
 	
-	<div class="clearfix"> </div>
+<!-- //banner -->
+<!--Services-->
+<div class="options-wthree" id="loginscreenbtn">
+    <div class="container">
+		<ul>
+			<li>
+                <!-- #myModal2 when connected to login -->
+			<a href="./main.html" data-toggle="modal">
+				<div class="opt-text-w3layouts">
+					<h6>Login</h6>
+				</div>
+			</a>
+			</li>
+			<li>
+			<a href="#myModal3" data-toggle="modal">
+				<div class="opt-text-w3layouts">
+					<h6>Sign Up</h6>
+				</div>
+			</a>
+			</li>
+		</ul>
+	</div>
 </div>
-	<!-- //Appointment --> 
 <!-- footer -->
 	<div class="footer">
-		<div class="agileinfo_footer_bottom1">
+		<div class="agileinfo_footer_bottom1" id="innerfooter1">
 			<div class="container">
 					<p>© 2018 Dial-Assist. All rights reserved | Design by Dial-Assist</p>
 				<div class="clearfix"> </div>
@@ -197,24 +149,56 @@
 <!-- //js -->
 <script src="js/jquery.nicescroll.js"></script>
 <script src="js/scripts.js"></script>
-<script src='js/demo1.js'></script>
 
-<!-- Calendar -->
-				<script src="js/jquery-ui.js"></script>
-				  <script>
-						  $(function() {
-							$( "#datepicker,#datepicker1,#datepicker2,#datepicker3" ).datepicker();
+<!--responsiveslides js-->
+<script src="js/responsiveslides.min.js"></script>
+			<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
 						  });
-				  </script>
-			<!-- //Calendar -->
+					
+						});
+			</script>
+			<script>
+							// You can also use "$(window).load(function() {"
+							$(function () {
+							  // Slideshow 3
+							  $("#slider3").responsiveSlides({
+								auto: true,
+								pager:false,
+								nav: true,
+								speed: 500,
+								namespace: "callbacks",
+								before: function () {
+								  $('.events').append("<li>before event fired.</li>");
+								},
+								after: function () {
+								  $('.events').append("<li>after event fired.</li>");
+								}
+							  });
+						
+							});
+						  </script>
 
-<!--jarallax -->
-	<script src="js/SmoothScroll.min.js"></script>
-<!-- //jarallax -->
+<!--//responsiveslides js-->
+<script src="js/SmoothScroll.min.js"></script>
 <!--menu script-->
 <script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
 <script src="js/classie.js"></script>
-
+<script src="js/demo1.js"></script>
 <!--//menu script-->
 <!-- banner -->
 <script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
