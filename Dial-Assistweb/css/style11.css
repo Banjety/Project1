@@ -25,7 +25,8 @@
     outline: none;
     z-index: 100;
     color: #fff;
-    background: #3aa4d8;
+	background: #3aa4d8;
+	border-radius: 10px;
 }
 
 /* Menu style */

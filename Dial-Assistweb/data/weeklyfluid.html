@@ -9,13 +9,14 @@
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //For-Mobile-Apps-and-Meta-Tags -->
 <!-- Custom Theme files -->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" type="text/css" href="css/style11.css" /><!-- menu style sheet -->
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
-<link href='css/override.css'/>
+<link href="../css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" type="text/css" href="../css/style11.css" /><!-- menu style sheet -->
+<link href="../css/style.css" type="text/css" rel="stylesheet" media="all"> 
+<link href='../css/override.css'/>
 <!-- //Custom Theme files -->
 <!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+<link href="../css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /> 
+
 <!-- //font-awesome icons -->
 
 <!-- web-fonts -->  
@@ -23,24 +24,11 @@
 <!-- //web-fonts -->
 </head>
 <body class="bg" id="loginpagebg">
-	<div class="overlay overlay-simplegenie">
-			<button type="button" class="overlay-close"><i class="fa fa-times" aria-hidden="true"></i></button>
-			<nav>
-				<ul>
-					<li><a href="main.html">Home</a></li>
-					<li><a href="journal.html">Journal</a></li>
-					<li><a href="treatment.html">Treatment</a></li>
-					<li><a href="renalinfo.html">Renal Info</a></li>
-					<li><a href="contact.html">Contact</a></li>
-				</ul>
-			</nav>
-		</div>
 		<section class="header-w3ls"> 
-			<button id="trigger-overlay" type="button"><i class="fa fa-bars" aria-hidden="true"></i></button>
-			<div class="bottons-agileits-w3layouts">
-			<a class="page-scroll" href="./login.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Log Out</a>.
+			<div class="bottons-agileits-w3layouts" id="backbtn">
+			<a class="page-scroll" href="../main.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Back</a>.
 			</div>
-		<h1 id="headertitle1"><a href="main.html">Dial-Assist</a></h1>
+		<h1 id="headertitle1"><a href="../main.html">Dial-Assist</a></h1>
 		<div class="clearfix"> </div>
 		</section>
 <!-- //menu -->
@@ -120,21 +108,59 @@
 			</div>
 		</div>
 	<!-- //modal --> 
+
 <div class='container'>
+	<div class="row">
+		<div class='col-md-12'>
+			<h4 class="tittle-w3layouts" style="text-align: center">Your Weekly Fluid Intake</h4>
+		</div>
+	</div>
 	<div class='row'>
-			<div class='col-md-12 mx-auto text-center' id="fluidchart">
-				<img src="./images/fluidcircleexample.png" alt="Example Fluid Chart" width="200" />
-				<p>Current Fluid Consumed .7L</p>
-				<p>Daily Fluid Goal = 1L or 32FLoz</p>
+			<div class='col-md-12'>
+				<dl class="chart">
+					<dt class="date">Mon</dt>
+					<dd class="bar" style="--start: 56;">
+					  <span class="value">45%</span>
+					</dd>
+				  
+					<dt class="date">Tue</dt> 
+					<dd class="bar" style="--start: 1;">
+					  <span class="value">100%</span> 
+					</dd>
+				  
+					<dt class="date">Wed</dt> 
+					<dd class="bar" style="--start: 38;">
+					  <span class="value">63%</span> 
+					</dd>
+				  
+					<dt class="date">Thu</dt> 
+					<dd class="bar" style="--start: 90;">
+					  <span class="value">11%</span> 
+					</dd>
+				  
+					<dt class="date">Fri</dt> 
+					<dd class="bar" style="--start: 55;">
+					  <span class="value">46%</span> 
+					</dd>
+				  
+					<dt class="date">Sat</dt> 
+					<dd class="bar" style="--start: 13;">
+					  <span class="value">88%</span> 
+					</dd>
+				  
+					<dt class="date">Sun</dt> 
+					<dd class="bar" style="--start: 66;">
+					  <span class="value">35%</span> 
+					</dd>
 			</div>	
 	</div>
 </div>
 <!--Services-->
-<div class="options-wthree">
+<!-- <div class="options-wthree">
     <div class="container">
 		<ul>
 			<li>
-			<a href='./data/weeklyfluid.html' class="opt-grids">
+			<a href="../journal.html" class="opt-grids">
 				<div class="icon-agileits-w3layouts">
 					<i class="fa fa-tint" aria-hidden="true"></i>
 				</div>
@@ -144,7 +170,7 @@
 			</a>
 			</li>
 			<li>
-			<a href="./data/weeklylabs.html" class="opt-grids">
+			<a href="../treatment.html" class="opt-grids">
 				<div class="icon-agileits-w3layouts">
 					<i class="fa fa-stethoscope" aria-hidden="true"></i>
 				</div>
@@ -153,41 +179,32 @@
 				</div>
 			</a>
 			</li>
-			<!-- <li>
-			<a href="about.html" class="opt-grids">
-				<div class="icon-agileits-w3layouts">
-					<i class="fa fa-users" aria-hidden="true"></i>
-				</div>
-				<div class="opt-text-w3layouts">
-					<h6>About</h6>
-				</div>
-			</a>
-			</li> -->
-			<!-- For future doctor use -->
-			<!-- <li>
-			<a href="doctor.html" class="opt-grids">
-				<div class="icon-agileits-w3layouts">
-					<i class="fa fa-user-md" aria-hidden="true"></i>
-				</div>
-				<div class="opt-text-w3layouts">
-					<h6>Doctor</h6>
-				</div>
-			</a>
-			</li> -->
-			<!-- <li>
-			<a href="contact.html" class="opt-grids">
-				<div class="icon-agileits-w3layouts">
-					<i class="fa fa-phone" aria-hidden="true"></i>
-				</div>
-				<div class="opt-text-w3layouts">
-					<h6>Contact</h6>
-				</div>
-			</a>
-			</li> -->
 		</ul>
 	</div>
-</div>
-
+</div> -->
+<div class="who-right-agileits">
+		<div class="panel-group w3l_panel_group_faq" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+			<div class="panel-heading" role="tab" id="headingOne">
+			  <h4 class="panel-title asd">
+				<a class="pa_italic" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+				  <span class="glyphicon glyphicon-plus" aria-hidden="true"></span><i class="glyphicon glyphicon-minus" aria-hidden="true"></i>See More
+				</a>
+			  </h4>
+			</div>
+			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+			  <div class="panel-body panel_text">
+				<u id="previousfluidweeks">
+					<li><a href="#">11/10/18</a></li>
+					<li><a href="#">10/20/18</a></li>
+					<li><a href="#">10/10/18</a></li>
+					<li><a href="#">09/20/18</a></li>
+				</u>
+			  </div>
+			</div>
+		  </div>
+		<div class="clearfix"> </div>
+	</div>
 <!--//Services-->
 <!-- footer -->
 	<div class="footer">
@@ -201,13 +218,13 @@
 <!-- //footer -->
 
 <!-- js -->
-<script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+<script type='text/javascript' src='../js/jquery-2.2.3.min.js'></script>
 <!-- //js -->
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
+<script src="../js/jquery.nicescroll.js"></script>
+<script src="../js/scripts.js"></script>
 
 <!--responsiveslides js-->
-<script src="js/responsiveslides.min.js"></script>
+<script src="../js/responsiveslides.min.js"></script>
 			<script>
 						// You can also use "$(window).load(function() {"
 						$(function () {
@@ -250,14 +267,14 @@
 						  </script>
 
 <!--//responsiveslides js-->
-<script src="js/SmoothScroll.min.js"></script>
+<script src="../js/SmoothScroll.min.js"></script>
 <!--menu script-->
-<script type="text/javascript" src="js/modernizr-2.6.2.min.js"></script>
-<script src="js/classie.js"></script>
-<script src="js/demo1.js"></script>
+<script type="text/javascript" src="../js/modernizr-2.6.2.min.js"></script>
+<script src="../js/classie.js"></script>
+<!-- <script src="../js/demo1.js"></script> -->
 <!--//menu script-->
 <!-- banner -->
-<script type='text/javascript' src='js/jquery.easing.1.3.js'></script> 
+<script type='text/javascript' src='../js/jquery.easing.1.3.js'></script> 
 <!-- //banner -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -268,7 +285,7 @@
 	});
 </script>
 <!--js for bootstrap working-->
-	<script src="js/bootstrap.js"></script>
+	<script src="../js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 </body>
 </html>

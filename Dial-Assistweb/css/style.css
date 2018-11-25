@@ -127,6 +127,9 @@ button#trigger-overlay i {
 .agileits_w3layouts_more{
 	position:relative;
 }
+#backbtn{
+	float: left!important;
+}
 .agileits_w3layouts_more a{
 	    font-size: 17px;
     color: #fff;
@@ -249,10 +252,148 @@ button#trigger-overlay i {
     background: url(../images/arrows.png) no-repeat -35px 0px;
     right: 0px;
 }
+.chart {
+	--scale: 100;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-rows: repeat(var(--scale), minmax(0, 1fr)) 1.4rem;
+    grid-column-gap: 5px;
+    --line-every: 10;
+    background-image: linear-gradient(to bottom, #ccc 1px, transparent 1px);
+    background-size: 100% calc((100% - 1.4rem) / var(--scale) * var(--line-every));
+    margin: 2em auto 1em;
+    padding: 0 1em;
+    position: relative;
+    max-width: 100vw;
+    height: calc(40vh - 3em);
+  }
+  
+  .chart::after {
+	background: #fff;
+	bottom: 0;
+	content: ' ';
+	height: 1.4rem;
+	left: 0;
+	position: absolute;
+	right: 0;
+  }
+  
+  
+  /* Dates… */
+  /* ------ */
+  
+  .date {
+	align-items: center;
+	display: flex;
+	font-weight: bold;
+	grid-row-start: -2;
+	justify-content: center;
+	text-align: center;
+	z-index: 2;
+  }
+  
+  
+  /* Each bar on the graph… */
+  /* ---------------------- */
+  
+  .bar {
+	grid-row: var(--start) / -2;
+	
+	/* Background-Color */
+	background-image: linear-gradient(to right, red, orange, yellow, #3aa4d8);
+	background-size: 1600% 100%;
+	background-position: calc(var(--start) * 1%) 0;
+	
+	/* Other styles… */
+	border-radius: 5px 5px 0 0;
+	color: #000;
+	list-style: none;
+	position: relative;
+  }
+  
+  .value {
+	background: #fff;
+	bottom: 100%;  
+	display: inline-block;
+	left: 50%;
+	padding: 0 0.4em;
+	position: absolute;
+	transform: translate(-50%, -1px);
+  }
+  
+  
+  /* Global helpers… */
+  /* --------------- */
+  
+  :root {
+	font-size: 80%;
+	font-family: sans-serif;
+  }
+  
+  * {
+	box-sizing: border-box;
+  }
 .callbacks_nav.prev {
     left: auto;
     background: url(../images/arrows.png) no-repeat 0px 0px;
     left: 0px;
+}
+#poinfo .poinfotext {
+	background-color: #3aa4d8;
+    padding: 10px 10px 10px 10px;
+    top: -50px;
+    left: -10px;
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#poinfo:hover .poinfotext {
+    visibility: visible;
+}
+#kinfo .kinfotext {
+	background-color: #3aa4d8;
+    padding: 10px 10px 10px 10px;
+    top: -50px;
+    left: -10px;
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#kinfo:hover .kinfotext {
+    visibility: visible;
+}
+#albinfo .albinfotext {
+	background-color: #3aa4d8;
+    padding: 10px 10px 10px 10px;
+    top: -50px;
+    left: -10px;
+    visibility: hidden;
+    width: 120px;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+#albinfo:hover .albinfotext {
+    visibility: visible;
 }
 #slider3-pager a {
   display: inline-block;
@@ -272,6 +413,9 @@ button#trigger-overlay i {
   background: #FFF;
   border-radius:30em;
   opacity:1;
+}
+#fluidchart{
+	margin-top: 15px;
 }
 #slider3-pager a {
   padding: 0;
@@ -436,6 +580,11 @@ button#trigger-overlay i {
 	outline:none;
 }
 #innerfooter1{
+	position: inherit;
+    bottom: 0px;
+    width: 100%;
+}
+#innerfooter2{
 	position: inherit;
     bottom: 0px;
     width: 100%;
@@ -2517,7 +2666,16 @@ h2.typoh2{
 	#innerfooter1{
 		position: absolute!important;
 		bottom: 0px;
-		width: 100%;;
+		width: 100%;
+	}
+	#innerfooter2{
+		position: absolute!important;
+		bottom: 0px;
+		width: 100%;
+		background: transparent;
+	}
+	#innerfooter2 p{
+		color: black!important;
 	}
 	.agileits-banner-info h3 {
 		font-size: 2.5em;
@@ -2560,7 +2718,7 @@ h2.typoh2{
 	.who-right-agileits {
 		width: 100%;
 		float: none;
-		padding: 2em 0 0 0em;
+		padding: 0em 0 0 0em;
 	}
 	.w3layouts_stats_left {
 		width: 50%;
